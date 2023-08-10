@@ -12,6 +12,5 @@ import SwiftUI
 struct EmgyLiveBundle: WidgetBundle {
     var body: some Widget {
         EmgyLive()
-        EmgyLiveLiveActivity()
     }
 }

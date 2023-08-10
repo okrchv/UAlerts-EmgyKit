@@ -14,11 +14,11 @@
 		501E95B92A7AC40500EF598D /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 501E95B82A7AC40500EF598D /* WidgetKit.framework */; };
 		501E95BB2A7AC40500EF598D /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 501E95BA2A7AC40500EF598D /* SwiftUI.framework */; };
 		501E95BE2A7AC40500EF598D /* EmgyLiveBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501E95BD2A7AC40500EF598D /* EmgyLiveBundle.swift */; };
-		501E95C02A7AC40500EF598D /* EmgyLiveLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501E95BF2A7AC40500EF598D /* EmgyLiveLiveActivity.swift */; };
 		501E95C22A7AC40500EF598D /* EmgyLive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501E95C12A7AC40500EF598D /* EmgyLive.swift */; };
-		501E95C42A7AC40500EF598D /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501E95C32A7AC40500EF598D /* AppIntent.swift */; };
 		501E95C62A7AC40B00EF598D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 501E95C52A7AC40B00EF598D /* Assets.xcassets */; };
 		501E95CA2A7AC40B00EF598D /* EmgyLiveExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 501E95B62A7AC40500EF598D /* EmgyLiveExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		50B90CA22A83F0F100DE5338 /* AlertTrackingAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B90CA12A83F0F100DE5338 /* AlertTrackingAttributes.swift */; };
+		50B90CA32A84F01700DE5338 /* AlertTrackingAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B90CA12A83F0F100DE5338 /* AlertTrackingAttributes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,11 +56,10 @@
 		501E95B82A7AC40500EF598D /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		501E95BA2A7AC40500EF598D /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		501E95BD2A7AC40500EF598D /* EmgyLiveBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmgyLiveBundle.swift; sourceTree = "<group>"; };
-		501E95BF2A7AC40500EF598D /* EmgyLiveLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmgyLiveLiveActivity.swift; sourceTree = "<group>"; };
 		501E95C12A7AC40500EF598D /* EmgyLive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmgyLive.swift; sourceTree = "<group>"; };
-		501E95C32A7AC40500EF598D /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
 		501E95C52A7AC40B00EF598D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		501E95C72A7AC40B00EF598D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50B90CA12A83F0F100DE5338 /* AlertTrackingAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertTrackingAttributes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +106,7 @@
 			children = (
 				501E95A32A7AC36900EF598D /* UAlerts_EmgyKitApp.swift */,
 				501E95A52A7AC36900EF598D /* ContentView.swift */,
+				50B90CA12A83F0F100DE5338 /* AlertTrackingAttributes.swift */,
 				501E95A72A7AC36F00EF598D /* Assets.xcassets */,
 				501E95A92A7AC36F00EF598D /* UAlerts_EmgyKit.entitlements */,
 				501E95AA2A7AC36F00EF598D /* Preview Content */,
@@ -135,9 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				501E95BD2A7AC40500EF598D /* EmgyLiveBundle.swift */,
-				501E95BF2A7AC40500EF598D /* EmgyLiveLiveActivity.swift */,
 				501E95C12A7AC40500EF598D /* EmgyLive.swift */,
-				501E95C32A7AC40500EF598D /* AppIntent.swift */,
 				501E95C52A7AC40B00EF598D /* Assets.xcassets */,
 				501E95C72A7AC40B00EF598D /* Info.plist */,
 			);
@@ -245,6 +243,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50B90CA22A83F0F100DE5338 /* AlertTrackingAttributes.swift in Sources */,
 				501E95A62A7AC36900EF598D /* ContentView.swift in Sources */,
 				501E95A42A7AC36900EF598D /* UAlerts_EmgyKitApp.swift in Sources */,
 			);
@@ -254,8 +253,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				501E95C02A7AC40500EF598D /* EmgyLiveLiveActivity.swift in Sources */,
-				501E95C42A7AC40500EF598D /* AppIntent.swift in Sources */,
+				50B90CA32A84F01700DE5338 /* AlertTrackingAttributes.swift in Sources */,
 				501E95C22A7AC40500EF598D /* EmgyLive.swift in Sources */,
 				501E95BE2A7AC40500EF598D /* EmgyLiveBundle.swift in Sources */,
 			);
@@ -400,6 +398,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -439,6 +438,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
